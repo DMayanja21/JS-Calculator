@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/calculator.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/calculator.js"></script>
+</head>
+<body>
+	<div class="calculator-grid">
+		<div class="output">
+			<div data-previou-operand class="previous-operand"></div>
+			<div data-current-operand class="current-operand"></div>
+		</div>
+		<button data-all-clear class="span-two" onclick="clear(), updateDisplay()">AC</button>
+		<button data-delete onclick="delete(), updateDisplay()">DEL</button>
+		<button data-operation onclick="chooseOperation('/'), updateDisplay()">/</button>
+		<button data-number onclick="appendNumber(7), updateDisplay()">7</button>
+		<button data-number onclick="appendNumber(8), updateDisplay()">8</button>
+		<button data-number onclick="appendNumber(9), updateDisplay()">9</button>
+		<button data-operation onclick="chooseOperation('*'), updateDisplay()">*</button>
+		<button data-number onclick="appendNumber(4), updateDisplay()">4</button>
+		<button data-number onclick="appendNumber(5), updateDisplay()">5</button>
+		<button data-number onclick="appendNumber(6), updateDisplay()">6</button>
+		<button data-operation onclick="chooseOperation('+'), updateDisplay()">+</button>
+		<button data-number onclick="appendNumber(1), updateDisplay()">1</button>
+		<button data-number onclick="appendNumber(2), updateDisplay()">2</button>
+		<button data-number onclick="appendNumber(3), updateDisplay()">3</button>
+		<button data-operation onclick="chooseOperation('-'), updateDisplay()">-</button>
+		<button data-number onclick="appendNumber('.'), updateDisplay()">.</button>
+		<button data-number onclick="appendNumber(0), updateDisplay()">0</button>
+		<button data-equals class="span-two" onclick="compute(), updateDisplay()">=</button>		
+	</div>
+
+	<!--
+	<div id=calc name=container>
+		<h1 id=myCalculator name=brandName style="text-align: left;" >DM-21000</h1>
+		<input type="text" name="disp" style="text-align: right;"><br>
+		<hr>
+		<input type="button" name="num_7" value=7 onclick="output(7)">
+		<input type="button" name="num_8" value=8 onclick="output(8)">
+		<input type="button" name="num_9" value=9 onclick="output(9)">
+		<input type="button" name="add_op" value="+" onclick="output('+')">
+		<input type="button" name="powop" value="^" onclick="output('^')">
+		<br>
+		<hr>
+		<input type="button" name="num_4" value=4 onclick="output(4)">
+		<input type="button" name="num_5" value=5 onclick="output(5)">
+		<input type="button" name="num_6" value=6 onclick="output(6)">
+		<input type="button" name="mult_op" value="*" onclick="output('*')">
+		<input type="button" name="root_op" value="Sqrt()" onclick="output(root(n))">
+		<br>
+		<hr>
+		<input type="button" name="num_1" value=1 onclick="output(1)">
+		<input type="button" name="num_2" value=2 onclick="output(2)">
+		<input type="button" name="num_3" value=3 onclick="output(3)">
+		<input type="button" name="sub_op" value="-" onclick="output('-')">
+		<input type="button" name="reset" value="C" onclick="output(clear())">
+		<br>
+		<hr>
+		<input type="button" name="point" value="." onclick="output('.')">
+		<input type="button" name="num_0" value=0 onclick="output('0')">
+		<input type="button" name="num_00" value="00" onclick="output('00')">
+		<input type="button" name="div_op" value="/" onclick="output('/')">
+		<input type="button" name="eql_op" value="=" onclick="output(eval(disp.value))">
+		<br>
+	</div>
+	-->
+</body>
+</html>
