@@ -92,7 +92,7 @@ const currentOperandTextElement=document.querySelectorAll('[data-current-operand
 
 
 const calculator=new Calculator(previousOperandTextElement,currentOperandTextElement)
-/*
+
 numberButtons.forEach(button =>{
 	button.addEventListener('click',()=>{
 		calculator.appendNumber(button.innerText)
@@ -120,14 +120,4 @@ allclearButton.addEventListener('click',button=>{
 deleteButton.addEventListener('click',button=>{
 	calculator.delete()
 	calculator.updateDisplay()
-})*/
-/*function root(n){
-	Math.sqrt(n);
-}
-function output(n){
-	var res=getItemByName(calc.disp.value);
-	calc.disp.value=res += n;
-}
-function clear(){
-	calc.disp.value=" ";
-}*/
+})
